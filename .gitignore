@@ -1,0 +1,104 @@
+# ───────────────────────────────────────────────
+# Node.js / JavaScript / npm / Yarn / pnpm
+# ───────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
+.yarn/
+.yarnrc.yml
+
+# Build / dist folders (frontend + backend)
+dist/
+build/
+out/
+.next/
+.vercel/
+.output/
+
+# Environment variables & secrets (critical!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env.*
+config/.env*
+credentials.json
+serviceAccountKey.json
+razorpay-keys.*
+*.pem
+*.key
+*.cert
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS / temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.AppleDouble
+.Trashes
+
+# Logs & caches
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+*.pid
+*.seed
+*.pid.lock
+coverage/
+.nyc_output/
+.cache/
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# Testing / temp
+/coverage
+/.nyc_output
+/test-results/
+playwright-report/
+blob-report/
+test-results/
+
+# Deployment / Render specific (usually not needed, but good to have)
+.render/
+render.yaml   # if you commit Render config (most people don't)
+
+# PDF / upload / temp user files (if you have local testing folders)
+uploads/
+temp/
+tmp/
+*.pdf   # ← only if you accidentally save test resumes locally; remove if you want to commit sample PDFs
+
+# Framer Motion / animation build artifacts (rare, but sometimes appears)
+.motion/
+
+# Optional: if using TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Optional: if using Docker locally
+Dockerfile.*
+docker-compose.*
+*.dockerignore
+
+# Optional: if you have local databases / seeds
+*.sqlite
+*.sqlite3
+*.db
